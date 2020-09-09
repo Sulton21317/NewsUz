@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">NewsUz</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="email_my">sultontatu21317@gmail.com</string>
+
+    <string name="thumbnail_image_view_desc">Youtube Video thumbnail image view</string>
+    <string name="close_player_activity">Close Player activity</string>
+    <string name="check_internet">Malumotlarni yuklab bo\'lmadi./Internetni tekshirib qayta urinib ko\'ring</string>
+
+    <!-- we need to use video ids instead of video link -->
+    <string-array name="video_id_array">
+        <item>mUq14E-lLyI</item>
+        <item>FJEPt3aDgm8</item>
+        <item>ttuYx9tDwGs</item>
+        <item>N-n72-lDP3A</item>
+        <item>oDAx2a8MpRo</item>
+        <item>lzDr04YlAlQ</item>
+        <item>sDLBMh99-sI</item>
+    </string-array>
+
+    <string-array name="video_title_array">
+        <item>TEZKOR XABAR--ROSSIYAGA ISHGA KETISH BOSHLANDI/XALQ KUTGAN KUN KELDI.(YANGILIKLAR)</item>
+        <item>Bugun O\'zbekistonda jiddiy o\'zgarishlar bo\'lmoqda</item>
+        <item>TEZKOR PREZIDENTDAN—MUHOJIRLAR UCHUN KUTILMAGAN YANGILIK BOLDI. XALQ KUTGAN KUN.(YANGILIKLAR)..</item>
+        <item>KATTA XUSH XABAR REYSLAR 5 TA YO\'NALISHDA TIKLANMOQDA...</item>
+        <item>XAFA BO\'LISH YO\'Q 116-SONI! DILFUZA ISMOILOVA NEGA UYIDAN BOSHLOVCHILARNI SOKIB XAYDAB YUBORDI?</item>
+        <item>YANGICHA KARANTINDA (1-SENTABR)</item>
+        <item>Kavla, sot, to\'ldir Manzil chiqindixona bo\'ldi</item>
+
+    </string-array>
+    <string-array name="video_duration_array">
+        <item>02:48</item>
+        <item>16:48</item>
+        <item>07:44</item>
+        <item>09:01</item>
+        <item>04:55</item>
+        <item>11:03</item>
+        <item>12:25</item>
+
+    </string-array>
+
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:layout_marginBottom="4dp"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="7dp">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+
+                android:id="@+id/news_author"
+                android:layout_width="0dp"
+
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+
+                android:layout_weight="1"
+                android:gravity="start"
+                android:paddingStart="7dp"
+                android:paddingTop="2dp"
+                android:text="author"
+                android:textColor="#0063CC"
+                android:textSize="14sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+
+                android:id="@+id/news_published_at"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:gravity="end"
+                android:paddingTop="2dp"
+                android:paddingEnd="7dp"
+                android:text="date"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:padding="4dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_view_for_news1"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_home"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+
+                android:id="@+id/news_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+android:paddingStart="3dp"
+                android:background="#77000000"
+                android:gravity="start"
+                android:hint="title"
+
+                android:paddingTop="3dp"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@id/image_view_for_news1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/news_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="4dp"
+            android:paddingTop="3dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/news_description_full"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="7dp"
+            android:autoLink="web"
+            android:gravity="end|bottom"
+            android:hint="url"
+            android:linksClickable="true"
+            android:paddingStart="4dp"
+            android:paddingTop="3dp"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

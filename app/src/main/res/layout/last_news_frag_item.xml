@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="155dp"
+    android:layout_margin="3dp"
+    android:padding="4dp"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="7dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+
+                android:id="@+id/last_news_author"
+                android:layout_width="0dp"
+
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+
+                android:layout_weight="1"
+                android:gravity="start"
+                android:paddingStart="7dp"
+                android:paddingTop="2dp"
+                android:text="author"
+                android:textColor="#0063CC"
+                android:textSize="14sp"
+                android:textStyle="italic|bold" />
+
+            <TextView
+
+                android:id="@+id/last_news_published_at"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:gravity="end"
+                android:paddingTop="2dp"
+                android:paddingEnd="7dp"
+                android:text="date"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:weightSum="7">
+
+                <TextView
+                    android:id="@+id/last_news_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="5.3"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:padding="7dp"
+                    android:text="title"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    tools:ignore="NestedWeights" />
+
+
+                <TextView
+                    android:id="@+id/last_news_description_full"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:autoLink="web"
+                    android:gravity="start|bottom"
+                    android:linksClickable="true"
+                    android:paddingStart="7dp"
+                    android:paddingBottom="3dp"
+                    android:text="url"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/last_news_image_view"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:background="@drawable/for_image_back"
+                android:padding="7dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
